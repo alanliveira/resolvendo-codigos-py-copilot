@@ -1,0 +1,28 @@
+[project]
+name = "resolvendo-codigos-py-copilot"
+version = "0.1.0"
+description = "Soluções de exercícios introdutórios em Python."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+navegar-solucoes = "app:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["app"]
+
+[tool.setuptools.packages.find]
+include = ["resolucoes_code*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

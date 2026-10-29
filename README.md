@@ -2,6 +2,25 @@
 
 Olá!! Aqui veremos algumas resoluções de códigos em python utilizando o Github Copilot.
 
+## Como executar
+
+O projeto utiliza [uv](https://docs.astral.sh/uv/) para gerenciar o ambiente e as dependências.
+
+```bash
+uv sync --group dev
+uv run navegar-solucoes
+```
+
+O segundo comando abre um menu para navegar entre as seis resoluções.
+
+### Testes
+
+Execute os testes automatizados com:
+
+```bash
+uv run pytest
+```
+
 ### Atenção ⚠️ 
 
 Não tem acesso ao Github Copilot?! Não tem problema!! 
